@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+
+      <!-- PERIOD SECTION -->
+      <div class="info-section">
+        <h2>PERIOD</h2>
+        <div class="counter">
+          <button onclick="periodMinus()" class="counter-btn">-</button>
+          <span id="period-value" class="counter-value">0</span>
+          <button onclick="periodPlus()" class="counter-btn">+</button>
+        </div>
+      </div>
+
+      <!-- TIMER SECTION -->
+      <div class="info-section">
+        <h2>TIMER</h2>
+        <div class="timer">
+          <div id="minutes" class="time-box">00</div>
+          <span class="timer-separator">:</span>
+          <div id="seconds" class="time-box">00</div>
+          <button id="start-btn" onclick="startTimer()">Start</button>
+        </div>
+      </div>
+
+    </div> <!-- END container -->
+
+
+    <!-- SCORE BOX -->
+    <div class="score-box">
+
+      <!-- HOME -->
+      <div class="score-column">
+        <h3>HOME</h3>
+        <h2 id="home-score" class="score-display">0</h2>
+
+        <div class="control-btns">
+          <button onclick="homeAdd1()">+1</button>
+          <button onclick="homeAdd2()">+2</button>
+          <button onclick="homeAdd3()">+3</button>
+        </div>
+
+        <h2>Fouls</h2>
+        <div class="counter">
+          <button onclick="homeFoulMinus()" class="counter-btn">-</button>
+          <span id="home-foul-value" class="counter-value">0</span>
+          <button onclick="homeFoulPlus()" class="counter-btn">+</button>
+        </div>
+      </div>
+
+      <!-- GUEST -->
+      <div class="score-column">
+        <h3>GUEST</h3>
+        <h2 id="guest-score" class="score-display">0</h2>
+
+        <div class="control-btns">
+          <button onclick="guestAdd1()">+1</button>
+          <button onclick="guestAdd2()">+2</button>
+          <button onclick="guestAdd3()">+3</button>
+        </div>
+
+        <h2>Fouls</h2>
+        <div class="counter">
+          <button onclick="guestFoulMinus()" class="counter-btn">-</button>
+          <span id="guest-foul-value" class="counter-value">0</span>
+          <button onclick="guestFoulPlus()" class="counter-btn">+</button>
+        </div>
+      </div>
+
+    </div> <!-- END score-box -->
+
+    <button id="new-game-btn" onclick="newGame()">NEW GAME</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>

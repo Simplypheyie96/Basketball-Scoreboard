@@ -1,0 +1,172 @@
+@font-face {
+  src: url("CursedTimerUlil-Aznm.ttf");
+  font-family: CursedTimerUlil-Aznm;
+}
+
+/* LAYOUT BASICS */
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(90deg, #D576B7 0%, #7270D7 100%);
+  text-align: center;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.2rem;
+}
+
+/* INFO CONTAINER (PERIOD + TIMER) */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+
+  padding: 0px 40px 40px 40px;
+  box-sizing: border-box;
+
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+
+  border-radius: 16px;
+  border: 2px solid #FFF;
+  background: rgba(255, 255, 255, 0.10);
+}
+
+/* SCOREBOX */
+.score-box {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+
+  padding: 40px 48px;
+  box-sizing: border-box;
+
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+
+  border-radius: 16px;
+  border: 2px solid #FFF;
+  background: rgba(255, 255, 255, 0.10);
+}
+
+/* HEADINGS */
+h3 {
+  color: #FFF;
+  margin: 0 0 8px;
+  font-size: 34px;
+}
+
+h2 {
+  color: #FFF;
+  margin-top: 40px;
+}
+
+/* SCORE COLUMNS */
+.score-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-display {
+  background: #392B93;
+  font-size: 90px;
+  color: #FF00B4;
+
+  width: 155px;
+  height: 120px;
+  padding: 10px 0;
+
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: CursedTimerUlil-Aznm;
+  margin: 12px;
+}
+
+/* Leader Highlight */
+.leader {
+  box-shadow: 0 0 20px #FF00B4;
+  border: 2px solid #FF00B4;
+}
+
+
+/* SCORE BUTTONS */
+.control-btns button {
+  font-family: CursedTimerUlil-Aznm;
+  border-radius: 10px;
+  border: 2px solid #E6DBE3;
+  background: transparent;
+  color: #FFF;
+  padding: 12px;
+  cursor: pointer;
+}
+
+/* COUNTERS */
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.counter-btn {
+  width: 50px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid #E6DBE3;
+  background: #392B93;
+  color: #FFF;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.counter-value,
+.timer-separator {
+  min-width: 40px;
+  text-align: center;
+  font-size: 32px;
+  font-family: CursedTimerUlil-Aznm;
+  color: #FFF;
+}
+
+/* TIMER */
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.time-box {
+  width: 50px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid #E6DBE3;
+  background: #392B93;
+  color: #FFF;
+  font-size: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: CursedTimerUlil-Aznm;
+}
+
+#new-game-btn,
+#start-btn {
+  border-radius: 6px;
+  border: 2px solid #E6DBE3;
+  background: #392B93;
+  color: #FFF;
+  padding: 12px 20px;
+  cursor: pointer;
+}
