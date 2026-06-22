@@ -188,14 +188,15 @@ function newGame() {
     
     minutes = 59
     seconds = 0
-    clearInterval (timerInterval)
+    clearInterval(timerInterval)
     timerRunning = false
     startTimerEl.textContent = "Start"
-    
+    // Reset button styling in case timer was running when New Game was clicked
+    startTimerEl.style.backgroundColor = "#392B93"
+    startTimerEl.style.borderColor = "#fff"
     
     minutesEl.textContent = "59"
     secondsEl.textContent = "00"
     
     updateLeader()
 }
-
